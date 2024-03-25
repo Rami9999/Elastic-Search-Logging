@@ -1,7 +1,7 @@
 {
     "name": "zeour/elastic-search-logging",
     "description": "send logs to elastic search",
-    "homepage": "https://gitlab.com/rami9999/elastic-search-logger.git",
+    "homepage": "https://github.com/Rami9999/Elastic-Search-Logging.git",
     "authors": [
         {
             "name": "Rami Abo Ajeeb",
@@ -13,5 +13,8 @@
         "psr-4": {
             "Zeour\\ElasticSearchLogging\\": "src/"
         }
-    }
+    },   
+    "repositories": [
+        {"type": "composer", "url": "https://zeour1.repo.repman.io"}
+    ]
 }

@@ -32,7 +32,7 @@ class ElasticsearchFallbackHandler extends AbstractProcessingHandler
             ->setHosts($elasticHost)
             ->setSSLVerification(false)
             ->setSSLCert($certificatePath.'ca.crt')
-            ->setBasicAuthentication('elastic', 'changeme')
+            ->setBasicAuthentication(env('ELASTIC_SEARCH_USER_NAME'), env('ELASTIC_SEARCH_PASSWORD'))
             ->setSSLKey($certificatePath.'ca.key')
             ->build();
 
