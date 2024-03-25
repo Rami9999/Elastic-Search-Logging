@@ -29,7 +29,7 @@ class ElasticsearchFallbackHandler extends AbstractProcessingHandler
             $elasticHost = env('ELASTIC_HOST');
             $today = Carbon::now()->format('Y-m-d');
             $elasticsearchClient = ClientBuilder::create()
-            ->setHosts($elasticHost)
+            ->setHosts([$elasticHost])
             ->setSSLVerification(false)
             ->setSSLCert($certificatePath.'ca.crt')
             ->setBasicAuthentication(env('ELASTIC_SEARCH_USER_NAME'), env('ELASTIC_SEARCH_PASSWORD'))
