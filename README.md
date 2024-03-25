@@ -1,7 +1,14 @@
 <h1>ELastic search Logging pkg</h1>
 ###########################################################
-
-<h2>require the pkg: </h2>
+<h2>check in the composer.jsoin if the folowing exists</h2>
+    "repositories": {
+        "repositories": 
+            {"type": "composer", "url": "https://zeour1.repo.repman.io"}
+        
+    },
+###########################################################
+<h2>require the pkgs: </h2>
+<h3> run: composer require elasticsearch/elasticsearch</h3>
 <h3> run: composer require zeour/elastic-search-logging</h3>
 ###########################################################
 <h2>Configurations: </h2>
