@@ -1,0 +1,17 @@
+{
+    "name": "zeour/elastic-search-logging",
+    "description": "send logs to elastic search",
+    "homepage": "https://gitlab.com/rami9999/elastic-search-logger.git",
+    "authors": [
+        {
+            "name": "Rami Abo Ajeeb",
+            "email": "rami@zeour.co.uk"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Zeour\\ElasticSearchLogging\\": "src/"
+        }
+    }
+}
